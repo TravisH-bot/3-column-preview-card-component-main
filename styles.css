@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Font */
+  --font-one: "Lexend Deca", sans-serif;
+  --font-two: "Big Shoulders Display", cursive;
+
+  /* Primary Colors */
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* Neutral Colors */
+  --transparent-white-p: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+  height: 100svh;
+  width: 99vw;
+  margin: 0;
+  background-color: var(--very-light-gray);
+}
+
+.main-container {
+  height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sedan-card,
+.suv-card,
+.luxury-card {
+  width: 25em;
+  height: 40em;
+  padding: 3.5em;
+}
+
+.sedan-card {
+  background-color: var(--bright-orange);
+  border-radius: 0.5em 0 0 0.5em;
+}
+
+.suv-card {
+  background-color: var(--dark-cyan);
+}
+
+.luxury-card {
+  background-color: var(--very-dark-cyan);
+  border-radius: 0 0.5em 0.5em 0;
+}
+
+.card-title {
+  color: var(--very-light-gray);
+  font-family: var(--font-two);
+  font-weight: 700;
+  text-transform: uppercase;
+}
