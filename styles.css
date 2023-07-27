@@ -37,8 +37,8 @@ body {
 .sedan-card,
 .suv-card,
 .luxury-card {
-  width: 25em;
-  height: 40em;
+  width: 21em;
+  height: 34em;
   padding: 3.5em;
 }
 
@@ -60,5 +60,96 @@ body {
   color: var(--very-light-gray);
   font-family: var(--font-two);
   font-weight: 700;
+  font-size: 2.5em;
   text-transform: uppercase;
+  margin: 0.8em auto;
+}
+
+.card-message {
+  color: var(--transparent-white-p);
+  font-family: var(--font-one);
+  line-height: 1.8;
+}
+
+.sedan-btn,
+.suv-btn,
+.luxury-btn {
+  border-style: none;
+  width: 10em;
+  height: 3.5em;
+  border-radius: 2em;
+  margin: 7em auto;
+  font-family: var(--font-one);
+  font-weight: 500;
+}
+
+.sedan-btn:hover,
+.suv-btn:hover,
+.luxury-btn:hover {
+  background-color: transparent;
+  color: var(--transparent-white-p);
+  border: 0.2em solid;
+  cursor: pointer;
+}
+
+.sedan-btn {
+  color: var(--bright-orange);
+}
+
+.suv-btn {
+  color: var(--dark-cyan);
+}
+
+.luxury-btn {
+  color: var(--very-dark-cyan);
+}
+
+.attribution {
+  text-align: center;
+  margin: -6em 0 6em 0;
+  color: var(--white);
+}
+
+@media screen and (max-width: 400px) {
+  .main-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .sedan-card,
+  .suv-card,
+  .luxury-card {
+    width: 21em;
+    height: 28em;
+    padding: 2.8em;
+  }
+
+  .sedan-card {
+    border-radius: 0.5em 0.5em 0 0;
+    margin-top: 2em;
+  }
+
+  .luxury-card {
+    border-radius: 0 0 0.5em 0.5em;
+    margin-bottom: 2em;
+  }
+
+  .card-title {
+    font-size: 2.5em;
+    margin: 0.6em auto;
+  }
+
+  .sedan-btn,
+  .suv-btn,
+  .luxury-btn {
+    width: 14em;
+    height: 4em;
+    margin: 2em auto;
+  }
+
+  .attribution {
+    text-align: center;
+    margin: 2em auto;
+    font-size: 0.9em;
+  }
 }
